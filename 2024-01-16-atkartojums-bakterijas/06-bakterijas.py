@@ -1,8 +1,8 @@
 def programma():
     sakuma_pop = iegut_skaitu("Ievadiet sākotnējo populāciju (vismaz 9): ", 9)
     beigu_pop = iegut_skaitu(f"Ievadiet beigu populāciju (vismaz {sakuma_pop}): ", sakuma_pop)
-    gadu_skaits = aprekinat_dienas(sakuma_pop, beigu_pop)
-    print(f"Dienas: {gadu_skaits}")
+    dienu_skaits = aprekinat_dienas(sakuma_pop, beigu_pop)
+    print(f"Dienas: {dienu_skaits}")
 
 def iegut_skaitu(teksts, mazaka_robeza):
     while True:
