@@ -10,15 +10,20 @@ menu = {
     "Tortilla Salad": 8.00
 }
 
+def noteikt_vertibu(pasutijums):
+    try:
+        vertiba = menu[pasutijums]
+        return vertiba
+    except KeyError:
+        return 0
+
 def main():
     summa = 0
     while True:
         try:
             pasutijums = input("Item: ").title()
-            summa += menu[pasutijums]
+            summa += noteikt_vertibu(pasutijums)
             print(f"${summa:.2f}")
-        except KeyError:
-            pass
         except EOFError:
             break
 main()
