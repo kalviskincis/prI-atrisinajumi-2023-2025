@@ -15,7 +15,7 @@ def main():
         else:
             print("Nepareizi dati.")
             sys.exit()
-    except:
+    except TypeError:
         print("Nepareizi dati.")
     
 
