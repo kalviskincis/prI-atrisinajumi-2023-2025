@@ -17,6 +17,8 @@ def main():
             sys.exit()
     except TypeError:
         print("Nepareizi dati.")
+    except ValueError:
+        print("Nepareizi dati.")
     
 
 def aprekins(cena, skaits):
